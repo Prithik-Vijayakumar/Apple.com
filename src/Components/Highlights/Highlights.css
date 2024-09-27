@@ -1,0 +1,79 @@
+@media (max-width : 600px) {
+
+    html, body {
+        background-color: rgb(36, 36, 36);
+    }
+
+    .highlights-container {
+        margin: 35% 0 0 0;
+        padding: 0 0 20% 0;
+    }
+
+    .hlts-heading {
+        text-align: left;
+        font-family: Arial, sans-serif;
+        font-size: 180%;
+        color: white;
+        margin: 0 0 0 6%;
+        font-weight: bolder;
+    }
+
+    .hlts-film-link {
+        margin: 0 0 13% 0;
+    }
+
+    .film-link {
+        text-align: left;
+        font-family: Helvetica Neue, sans-serif;
+        font-size: 90%;
+        color: rgb(51, 140, 255);
+        margin: 1% 0 0 6%;
+    }
+
+    .carousel {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 5% 0 10% 0;
+    }
+
+    .carousel .carousel-control-prev,
+    .carousel .carousel-control-next {
+        display: none;
+    }
+
+    .hlts-container {
+        max-width: 85%;
+        min-height: 120%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 15% 0 0 0;
+        background-color: black;
+        border-radius: 25px;
+    }
+
+    .hlts-images {
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        border-radius: 25px;
+    }
+
+    .hlts-details {
+        position: absolute;
+        overflow: auto;
+        color: rgb(231, 231, 231);
+        font-family: Helvetica Neue, sans-serif;
+        font-size: 110%;
+        text-align: center;
+        max-width: 60%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        top: 7%;
+        left: 20%;
+        font-weight: bold;
+    }
+
+}
+
