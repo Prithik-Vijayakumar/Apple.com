@@ -180,7 +180,7 @@ function Home () {
                             <p className="pop-up-heading">
                                 iPhone 16 Pro
                             </p>
-                            <button className="pop-up-buy">Buy</button>
+                            <button className="pop-up-buy" onClick={handleBuy}>Buy</button>
                         </nav>
                 )}
             </div>
