@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Apple.com/static/css/main.bfaa55e8.css",
-    "main.js": "/Apple.com/static/js/main.8bac685c.js",
+    "main.js": "/Apple.com/static/js/main.fc5e603d.js",
     "static/js/453.fa7abe88.chunk.js": "/Apple.com/static/js/453.fa7abe88.chunk.js",
     "static/media/logo.svg": "/Apple.com/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Apple.com/index.html",
     "main.bfaa55e8.css.map": "/Apple.com/static/css/main.bfaa55e8.css.map",
-    "main.8bac685c.js.map": "/Apple.com/static/js/main.8bac685c.js.map",
+    "main.fc5e603d.js.map": "/Apple.com/static/js/main.fc5e603d.js.map",
     "453.fa7abe88.chunk.js.map": "/Apple.com/static/js/453.fa7abe88.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bfaa55e8.css",
-    "static/js/main.8bac685c.js"
+    "static/js/main.fc5e603d.js"
   ]
 }
