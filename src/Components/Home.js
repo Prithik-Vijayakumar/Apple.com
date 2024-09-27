@@ -4,7 +4,10 @@ import "./Home.css";
 function Home () {
 
     const handlelink = () => {
-        window.open ( "https://www.apple.com/", "_blank" )
+        window.location.href = "https://www.apple.com/"
+    }
+    const handleBuy = () => {
+        window.location.href = "https://www.apple.com/shop/buy-iphone/iphone-16-pro"
     }
 
     return (
@@ -22,7 +25,7 @@ function Home () {
                     <img src={process.env.PUBLIC_URL + "/Images/iPhone 16 Pro/Front Image.jpg"} className="home-img"/>
                 </div>
                 <div className="buy-btn-container">
-                    <button className="buy-btn">
+                    <button className="buy-btn" onClick={handleBuy}>
                         Buy
                     </button>
                 </div>

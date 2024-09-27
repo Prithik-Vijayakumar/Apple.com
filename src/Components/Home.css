@@ -15,20 +15,20 @@ html, body {
 }
 
 .logo {
-    height: 4%;
-    width: 4%;
+    height: 4.5%;
+    width: 4.5%;
     float: left;
-    margin: 2.8%;
+    margin: 3.5% 3.5% 3.5% 4%;
     opacity: 0.8;
     transition: 0.5s;
     cursor: pointer;
 }
 
 .menu {
-    height: 4%;
-    width: 4%;
+    height: 5%;
+    width: 5%;
     float: right;
-    margin: 2.8%;
+    margin: 3.5%;
     opacity: 0.8;
     transition: 0.5s;
     cursor: pointer;
@@ -46,11 +46,11 @@ html, body {
     font-family: Helvetica Neue, sans-serif;
     color: rgb(231, 231, 231);
     font-weight: bolder;
-    font-size: 140%;
+    font-size: 135%;
     margin: 0%;
     padding: 0%;
     transform: translate(-50%, -50%);
-    top: 5%;
+    top: 7.8%;
     left: 50%;
     position: absolute;
 }
@@ -58,11 +58,11 @@ html, body {
 .home-img {
     width: 100%;
     margin: 0%;
-
+    border-radius: 100%;
 }
 
 .home-img-container {
-    margin: 5% 0 0 0;
+    margin: 0% 0 0 0;
     padding: 0%;
     position: relative;
     display: inline-block;
@@ -71,12 +71,13 @@ html, body {
 .hello-img {
     width: 100%;
     margin: 0%;
+    border-radius: 10%;
 }
 
 .buy-btn {
     color: rgb(231, 231, 231);
-    background-color: rgb(50, 50, 255);
-    font-family: Helvetica Neue, sans-serif;
+    background-color: rgb(0, 110, 255);
+    font-family: Arial, sans-serif;
     font-size: 100%;
     border-radius: 45px;
     border-style: none;
@@ -86,21 +87,21 @@ html, body {
 
 .buy-btn-container {
     text-align: center;
-    margin: 13% 0 0 0;
+    margin: 15% 0 0 0;
 }
 
 .buy-detail-1 {
-    font-family: Helvetica Neue, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: bold;
-    color: rgb(99, 99, 99);
+    color: rgb(128, 128, 128);
     font-size: 110%;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
 
 .buy-detail-2 {
-    font-family: Helvetica Neue, sans-serif;
-    color: rgb(99, 99, 99);
+    font-family: Arial, sans-serif;
+    color: rgb(128, 128, 128);
     font-size: 90%;
     margin: 0.5% 0 0 0;
     padding: 0 0 0 0;
