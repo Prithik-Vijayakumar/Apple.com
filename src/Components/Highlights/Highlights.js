@@ -33,11 +33,23 @@ function Highlights () {
         }
     }, [isVideoOpen])
 
+    const handleIndicator = (selectedIndex) => {
+        handleIndex(selectedIndex)
+        handleIndicatorControl()
+    }
+
+    const handleIndicatorControl = () => {
+        setAutoPlay(false)
+        setIndicatorImage(indicatorImage === stop ? play : play)
+    }
+
     const handleIndex = (selectedIndex) => {
         setActiveIndex(selectedIndex)
 
-        if (activeIndex === 4) {
-            setTimeout (() => {setIndicatorImage(playback)}, 3000)
+        if (activeIndex === 4 && indicatorImage === stop) {
+            setTimeout (() => {setIndicatorImage(playback)}, 5000)
+        } else if (activeIndex !== 4) {
+            setIndicatorImage(stop)
         }
     }
 
@@ -45,8 +57,12 @@ function Highlights () {
         if (activeIndex !== 5) {
             setAutoPlay(!autoPlay)
             setIndicatorImage(indicatorImage === stop ? play : stop)
-        } else if (activeIndex === 5) {
-            setIndicatorImage(indicatorImage === playback ? stop : play)
+        } else if (activeIndex === 5 && indicatorImage === play) {
+            setAutoPlay(!autoPlay)
+            setIndicatorImage(indicatorImage === play ? stop : play)
+            setTimeout (() => {setIndicatorImage(playback)}, 5000)
+        } else if (activeIndex === 5 && indicatorImage === playback) {
+            setIndicatorImage(indicatorImage === playback ? stop : stop)
             setActiveIndex(0)
         }
     }
@@ -85,7 +101,7 @@ function Highlights () {
                         </div>
                     )}
                     <div className="carousel">
-                    <Carousel activeIndex={activeIndex} onSelect={handleIndex} className="carousel" indicators= {false} interval={autoPlay ? 4000 : null} wrap={false} >
+                    <Carousel activeIndex={activeIndex} onSelect={handleIndex} className="carousel" indicators= {false} interval={autoPlay ? 5000 : null} wrap={false} >
                         <Carousel.Item>
                             <div className="hlts-container">
                                 <p className="hlts-details">
@@ -147,12 +163,12 @@ function Highlights () {
                 <div className="indicators-container">
                 <button className="indicators-play-btn" onClick={handleAutoPlay}><img className="play" src={indicatorImage} /></button>
                 <div className="indicators">
-                    <button className={`indicator ${activeIndex === 0 ? "active" : ""}`} onClick={() => handleIndex(0)}></button>
-                    <button className={`indicator ${activeIndex === 1 ? "active" : ""}`} onClick={() => handleIndex(1)}></button>
-                    <button className={`indicator ${activeIndex === 2 ? "active" : ""}`} onClick={() => handleIndex(2)}></button>
-                    <button className={`indicator ${activeIndex === 3 ? "active" : ""}`} onClick={() => handleIndex(3)}></button>
-                    <button className={`indicator ${activeIndex === 4 ? "active" : ""}`} onClick={() => handleIndex(4)}></button>
-                    <button className={`indicator ${activeIndex === 5 ? "active" : ""}`} onClick={() => handleIndex(5)}></button>
+                    <button className={`indicator ${activeIndex === 0 ? "active" : ""}`} onClick={() => handleIndicator(0)}></button>
+                    <button className={`indicator ${activeIndex === 1 ? "active" : ""}`} onClick={() => handleIndicator(1)}></button>
+                    <button className={`indicator ${activeIndex === 2 ? "active" : ""}`} onClick={() => handleIndicator(2)}></button>
+                    <button className={`indicator ${activeIndex === 3 ? "active" : ""}`} onClick={() => handleIndicator(3)}></button>
+                    <button className={`indicator ${activeIndex === 4 ? "active" : ""}`} onClick={() => handleIndicator(4)}></button>
+                    <button className={`indicator ${activeIndex === 5 ? "active" : ""}`} onClick={() => handleIndicator(5)}></button>
                 </div>
                 </div>
             </div>
