@@ -1,12 +1,12 @@
 @media (max-width : 600px) {
 
     html, body {
-        background-color: rgb(36, 36, 36);
+        background-color: rgb(29, 29, 31);
     }
 
     .highlights-container {
-        margin: 35% 0 0 0;
-        padding: 0 0 20% 0;
+        margin: 30% 0 0 0;
+        padding: 0 0 15% 0;
     }
 
     .hlts-heading {
@@ -19,7 +19,9 @@
     }
 
     .hlts-film-link {
-        margin: 0 0 13% 0;
+        margin: 3% 0 13% 4%;
+        display: flex;
+        width: 35%;
     }
 
     .film-link {
@@ -27,14 +29,20 @@
         font-family: Helvetica Neue, sans-serif;
         font-size: 90%;
         color: rgb(51, 140, 255);
-        margin: 1% 0 0 6%;
+        margin: 1% 0 0 6.5%;
+    }
+
+    .film-play {
+        width: 12%;
+        height: 10%;
+        margin: 1.7% 0 0 4%;
     }
 
     .carousel {
         text-align: center;
         align-items: center;
         justify-content: center;
-        margin: 5% 0 10% 0;
+        margin: 5% 0 15% 0;
     }
 
     .carousel .carousel-control-prev,
@@ -75,5 +83,101 @@
         font-weight: bold;
     }
 
+    .play {
+        max-width: 60%;
+        height: 100%;
+        margin: 13% 0 13% 0;
+        padding: 0 0 0 0;
+        position: static;
+        opacity: 0.9;
+    }
+
+    .indicators-play-btn {
+        width: 15%;
+        min-height: 20%;
+        background-color: rgb(58, 58, 58);
+        padding: 3.2% 3% 3.2% 3%;
+        border-radius: 50%;
+        border-style: none;
+    }
+
+    .indicators-container {
+        margin: 0 0 5% 0;
+        padding: 0 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .indicators {
+        background-color: rgb(58, 58, 58);
+        margin: 0 0 0 3%;
+        justify-content: center;
+        align-items: center;
+        padding: 3% 3% 6% 3%;
+        border-radius: 30px;
+        max-width: 48%;
+        width: 100%;
+    }
+
+    .indicator {
+        margin: 0 4% 0 4%;
+        border-radius: 100%;
+        padding: 2.5% 2.8% 2.5% 2.8%;
+        border-style: none;
+        transition: 1s;
+        background-color: rgb(204, 204, 204);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .indicator:hover {
+        background-color: white;
+    }
+
+    .indicator.active {
+        margin: 0 5% 0 5%;
+        border-radius: 30px;
+        padding: 2.5% 11% 2.5% 11%;
+        border-style: none;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .film-container {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgb(29, 29, 31);
+        z-index: 3;
+    }
+
+    .film-close-btn {
+        color: white;
+        background-color: rgb(58, 58, 58);
+        padding: 0% 60% 0% 60%;
+        margin: 0 0% 0 0%;
+        font-size: 170%;
+        border-radius: 100%;
+        border-style: none;
+    }
+
+    .film-close {
+        float: right;
+        margin: 4% 10% 0 0;
+    }
+
+    video {
+        width: 100%;
+        margin: 57% 0 0 0;
+    }
+
+    .video-container {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
 }
 

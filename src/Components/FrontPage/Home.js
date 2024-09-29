@@ -46,6 +46,18 @@ function Home () {
         }, 800)
     }
 
+    useEffect (() => {
+        if (isVisible) {
+            document.body.style.overflow = "hidden"
+        } else {
+            document.body.style.overflow = "auto"
+        }
+
+        return () => {
+            document.body.style.overflow = "auto"
+        }
+    }, [isVisible])
+
     const openStore = () => {
         window.location.href = "https://www.apple.com/store"
     }
