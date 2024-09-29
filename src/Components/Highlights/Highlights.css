@@ -50,6 +50,21 @@
         display: none;
     }
 
+    @keyframes showUp {
+        0% {
+            left: 50%;
+            opacity: 0;
+            max-width: 60%;
+            width: 60%;
+        }
+        100% {
+            left: 20%;
+            opacity: 1;
+            max-width: 60%;
+            width: 60%;
+        }
+    }
+
     .hlts-container {
         max-width: 85%;
         min-height: 120%;
@@ -70,8 +85,8 @@
 
     .hlts-details {
         position: absolute;
-        overflow: auto;
         color: rgb(231, 231, 231);
+        overflow: hidden;
         font-family: Helvetica Neue, sans-serif;
         font-size: 110%;
         text-align: center;
@@ -81,6 +96,8 @@
         top: 7%;
         left: 20%;
         font-weight: bold;
+        animation-timeline: scroll();
+        animation: showUp 1s ease alternate;
     }
 
     .play {
